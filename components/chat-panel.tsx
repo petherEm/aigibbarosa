@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'What are your latest arrivals?',
+      subheading: 'Listing our top luxurypicks',
+      message: `Provide the list of the latest products we have on sale right now.`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'I am looking for an amazing gift for...',
+      subheading: 'The luxury gift for her',
+      message: 'Provide the list of products that have a "gift" tag.'
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'Tell me more about Luis Vuitton',
+      subheading: 'The set of key facts and history of Luis Vuitton',
+      message: `Provide 20 key information about Luis Vuitton brand.`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'What is the best place to visit in Europe?',
+      subheading: `Exploring Europe`,
+      message: `What is the best place to visit in Europe?`
     }
   ]
 
@@ -70,7 +70,7 @@ export function ChatPanel({
             exampleMessages.map((example, index) => (
               <div
                 key={example.heading}
-                className={`cursor-pointer rounded-lg border bg-white p-4 hover:bg-zinc-50 dark:bg-zinc-950 dark:hover:bg-zinc-900 ${
+                className={`font-inter cursor-pointer rounded-lg border bg-white p-4 hover:bg-zinc-50 dark:bg-zinc-950 dark:hover:bg-zinc-900 ${
                   index > 1 && 'hidden md:block'
                 }`}
                 onClick={async () => {
@@ -92,8 +92,8 @@ export function ChatPanel({
                   ])
                 }}
               >
-                <div className="text-sm font-semibold">{example.heading}</div>
-                <div className="text-sm text-zinc-600">
+                <div className="text-lg font-semibold">{example.heading}</div>
+                <div className="text-lg text-zinc-600">
                   {example.subheading}
                 </div>
               </div>
@@ -131,7 +131,7 @@ export function ChatPanel({
 
         <div className="space-y-4 border-t bg-background px-4 py-2 shadow-lg sm:rounded-t-xl sm:border md:py-4">
           <PromptForm input={input} setInput={setInput} />
-          <FooterText className="hidden sm:block" />
+          {/* <FooterText className="hidden sm:block" /> */}
         </div>
       </div>
     </div>

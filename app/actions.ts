@@ -1,5 +1,7 @@
 'use server'
 
+// This is ALL CHAT RELATED ACTIONS ONLY WHEN AUTHENTICATION AND KV IS SET UP
+
 import { revalidatePath } from 'next/cache'
 import { redirect } from 'next/navigation'
 import { kv } from '@vercel/kv'

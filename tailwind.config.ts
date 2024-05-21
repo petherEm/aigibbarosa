@@ -19,7 +19,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)']
+        mono: ['var(--font-geist-mono)'],
+        inter: ['var(--font-inter)'],
+        playfair: ['var(--font-playfair-display)']
       },
       colors: {
         border: 'hsl(var(--border))',
