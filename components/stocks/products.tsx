@@ -10,6 +10,7 @@ interface Product {
   title: string
   url: string
   description: string
+  images: { url: string }[]
 }
 
 export function Products({ props: products }: { props: Product[] }) {
